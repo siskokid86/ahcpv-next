@@ -84,14 +84,13 @@ const StepResults = ({ data, setField }: Props) => {
 
 
     try {
-      await fetch("https://hooks.zapier.com/hooks/catch/9270408/unfsfdm/", {
+      await fetch("/api/lead", {
         method: "POST",
-        mode: "no-cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
     } catch (err) {
-      console.error("Webhook error:", err);
+      console.error("Lead submission error:", err);
     }
 
     // Save estimate for thank you page

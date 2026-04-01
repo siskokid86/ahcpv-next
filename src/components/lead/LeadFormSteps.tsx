@@ -106,16 +106,15 @@ const LeadFormSteps = ({ initialPostalCode = "", onComplete, mode }: LeadFormSte
       } catch {}
     }
 
-    // Send to Zapier webhook
+    // Send to API route (proxied to Zapier)
     try {
-      await fetch("https://hooks.zapier.com/hooks/catch/9270408/unfsfdm/", {
+      await fetch("/api/lead", {
         method: "POST",
-        mode: "no-cors",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
     } catch (err) {
-      console.error("Zapier webhook error:", err);
+      console.error("Lead submission error:", err);
     }
 
     setSubmitting(false);
