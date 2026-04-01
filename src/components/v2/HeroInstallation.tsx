@@ -107,7 +107,7 @@ const HeroInstallation = () => {
         </h1>
 
         <p className="mx-auto mb-4 max-w-2xl text-lg font-light text-primary-foreground/70">
-          Pose en 1-2 jours par notre équipe de 11 experts certifiés RGE. Batterie ou borne de recharge offerte.
+          Pose en 1-2 jours par notre équipe de 11 experts certifiés RGE. 2 ans de batterie virtuelle offerts.
         </p>
 
         <div className="mx-auto mb-4 max-w-lg overflow-hidden rounded-2xl bg-card shadow-xl ring-1 ring-border/50">

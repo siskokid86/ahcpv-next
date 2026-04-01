@@ -17,7 +17,7 @@ const packs = [
     features: [
       "Production ~4 200 kWh/an",
       "Idéal pour 1-2 personnes",
-      "Batterie ou borne offerte",
+      "2 ans batterie virtuelle offerts",
       "Économies ~70 €/mois",
     ],
     cta: "Estimer mes économies",
@@ -32,7 +32,7 @@ const packs = [
     features: [
       "Production ~8 400 kWh/an",
       "Idéal pour 3-4 personnes",
-      "Batterie ou borne offerte",
+      "2 ans batterie virtuelle offerts",
       "Prime autoconsommation 2 205 €",
       "Économies ~110 €/mois",
       "Rentabilisé en ~7 ans",
@@ -49,7 +49,7 @@ const packs = [
     features: [
       "Production ~12 600 kWh/an",
       "Idéal gros consommateurs",
-      "Batterie ou borne offerte",
+      "2 ans batterie virtuelle offerts",
       "Prime autoconsommation maximale",
       "Économies jusqu'à 160 €/mois",
       "Revente de surplus possible",
@@ -64,7 +64,7 @@ const S360Pricing = () => (
     <div className="mx-auto max-w-[1120px] px-5 text-center">
       <h2 className="text-2xl font-bold text-[#1a2b4a] md:text-4xl">Nos packs solaires</h2>
       <p className="mx-auto mt-4 max-w-[700px] text-lg text-[#4a5568]">
-        Pose incluse, aides déduites. Batterie virtuelle MyLight ou borne de recharge 12 kW offerte sur chaque pack.
+        Pose incluse, aides déduites. Batterie virtuelle MyLight 2 ans offerte sur chaque pack.
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-3">

@@ -7,15 +7,11 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 const faqs = [
   {
     q: "Peut-on vraiment recharger sa voiture électrique avec des panneaux solaires ?",
-    a: "Oui, c'est tout à fait possible et de plus en plus courant. Vos panneaux solaires produisent de l'électricité en journée, qui alimente directement votre borne de recharge. Le surplus peut être stocké virtuellement pour recharger le soir. Résultat : vous roulez avec votre propre énergie solaire.",
+    a: "Oui, c'est tout à fait possible et de plus en plus courant. Vos panneaux solaires produisent de l'électricité en journée, qui peut alimenter directement votre borne de recharge. Le surplus est stocké virtuellement grâce à la batterie virtuelle incluse dans nos offres, pour recharger le soir. Résultat : vous roulez avec votre propre énergie solaire.",
   },
   {
     q: "Combien de panneaux solaires faut-il pour recharger une voiture électrique ?",
     a: "Cela dépend de votre kilométrage annuel et de votre véhicule. En moyenne, une installation de 6 kWc (12 panneaux) suffit pour couvrir les besoins d'un rouleur moyen tout en alimentant une partie de la maison. Une étude personnalisée permet de dimensionner précisément votre installation.",
-  },
-  {
-    q: "Quelle borne de recharge est compatible avec les panneaux solaires ?",
-    a: "Toutes les bornes de recharge domestiques sont compatibles avec une installation photovoltaïque. Nous installons des bornes intelligentes qui peuvent prioriser la recharge solaire : votre voiture se recharge en priorité quand vos panneaux produisent, pour maximiser l'autoconsommation.",
   },
   {
     q: "Est-ce que ça fonctionne aussi pour une voiture hybride rechargeable ?",
@@ -23,11 +19,7 @@ const faqs = [
   },
   {
     q: "Puis-je recharger ma voiture la nuit avec l'énergie solaire ?",
-    a: "Oui, grâce au stockage virtuel inclus dans nos offres. L'énergie produite en journée que vous ne consommez pas est créditée sur votre compte. Vous la récupérez le soir pour recharger votre véhicule, sans aucune perte.",
-  },
-  {
-    q: "La borne de recharge est-elle incluse dans l'installation ?",
-    a: "Dans le cadre de notre offre, la borne de recharge peut être offerte avec votre installation solaire. Tout est installé par nos équipes certifiées : panneaux, onduleur et borne, en une seule intervention.",
+    a: "Oui, grâce au stockage virtuel inclus dans nos offres (2 ans offerts). L'énergie produite en journée que vous ne consommez pas est créditée sur votre compte. Vous la récupérez le soir pour recharger votre véhicule, sans aucune perte.",
   },
 ];
 

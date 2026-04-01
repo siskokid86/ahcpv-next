@@ -5,7 +5,6 @@ import Link from "next/link";
 const logoAhc = "/images/logo-ahc.png";
 import { Phone, Sun, Zap, Battery as BatteryIcon, Share2, CheckCircle2, Clock, CheckCircle, User, Mail } from "lucide-react";
 const batterieImg = "/images/batterie-panneau-solaire-offerte.webp";
-const borneImg = "/images/borne-de-recharge-kdo.jpg";
 
 const getPromoEndDate = () => {
   const now = new Date();
@@ -41,7 +40,7 @@ const TankSimu = () => {
     try {
       if (typeof (window as any).gtag === "function") {
         (window as any).gtag("event", "conversion", {
-          send_to: "AW-11176357292/u7tACN_rs5QbEKzbptEp",
+          send_to: "AW-11176357292/u7tACN_rs5QbEKzzptEp",
         });
       }
     } catch {}
@@ -57,30 +56,17 @@ const TankSimu = () => {
     }
   };
 
-  const offerCards = [
-    {
-      img: batterieImg,
-      icon: BatteryIcon,
-      title: "Batterie de stockage",
-      subtitle: "Physique ou virtuelle",
-      features: [
-        "Stockez le surplus non consommé",
-        "Pas de revente à 0,04cts/kWh",
-        "Batterie 6,6kWh ou Urban Solar",
-      ],
-    },
-    {
-      img: borneImg,
-      icon: Zap,
-      title: "Borne de recharge",
-      subtitle: "12kW pour véhicule électrique",
-      features: [
-        "Recharge rapide à la maison",
-        "Câble type 2 inclus",
-        "Puissance max 50A • 12 kW",
-      ],
-    },
-  ];
+  const offerCard = {
+    img: batterieImg,
+    icon: BatteryIcon,
+    title: "Batterie virtuelle MyLight",
+    subtitle: "2 ans offerts",
+    features: [
+      "Stockez votre surplus virtuellement",
+      "Restituez-le quand vous en avez besoin",
+      "Zéro revente à perte (0,04 cts/kWh)",
+    ],
+  };
 
   return (
     <div className="flex min-h-screen flex-col bg-background">
@@ -150,44 +136,39 @@ const TankSimu = () => {
                 Offre limitée — jusqu&apos;au {promoEnd}
               </div>
               <h2 className="mb-3 text-2xl font-bold md:text-3xl">
-                Batterie ou borne de recharge offerte*
+                2 ans de batterie virtuelle offerts*
               </h2>
               <p className="mx-auto max-w-xl text-sm text-primary-foreground/75">
                 Livré et installé sans supplément, en plus de votre installation solaire.
               </p>
             </div>
 
-            <div className="grid gap-6 md:grid-cols-2">
-              {offerCards.map((card) => (
-                <div
-                  key={card.title}
-                  className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
-                >
-                  <div className="flex items-center justify-center bg-muted p-6">
-                    <img
-                      src={card.img}
-                      alt={card.title}
-                      className="max-h-40 rounded-xl object-contain"
-                      loading="lazy"
-                    />
+            <div className="mx-auto max-w-md">
+              <div className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+                <div className="flex items-center justify-center bg-muted p-6">
+                  <img
+                    src={offerCard.img}
+                    alt={offerCard.title}
+                    className="max-h-40 rounded-xl object-contain"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                    <offerCard.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <div className="flex flex-1 flex-col p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                      <card.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <h3 className="text-lg font-bold text-foreground">{card.title}</h3>
-                    <p className="mb-4 text-sm text-muted-foreground">{card.subtitle}</p>
-                    <div className="space-y-2.5">
-                      {card.features.map((f) => (
-                        <div key={f} className="flex items-center gap-2">
-                          <CheckCircle className="h-4 w-4 shrink-0 text-primary" />
-                          <span className="text-sm text-foreground">{f}</span>
-                        </div>
-                      ))}
-                    </div>
+                  <h3 className="text-lg font-bold text-foreground">{offerCard.title}</h3>
+                  <p className="mb-4 text-sm text-muted-foreground">{offerCard.subtitle}</p>
+                  <div className="space-y-2.5">
+                    {offerCard.features.map((f) => (
+                      <div key={f} className="flex items-center gap-2">
+                        <CheckCircle className="h-4 w-4 shrink-0 text-primary" />
+                        <span className="text-sm text-foreground">{f}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              ))}
+              </div>
             </div>
           </div>
 

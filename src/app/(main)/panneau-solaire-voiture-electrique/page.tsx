@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import PanneauSolaireVoitureElectrique from "@/components/pages/PanneauSolaireVoitureElectrique";
 
 export const metadata: Metadata = {
-  title: "Panneaux Solaires + Voiture Électrique | Borne de recharge incluse",
+  title: "Panneau Solaire et Voiture Électrique | Amélioration Habitat Conseil",
   description:
-    "Rechargez votre voiture électrique avec vos panneaux solaires. Borne de recharge incluse. Jusqu'à 1 200€/an d'économies.",
+    "Rechargez votre voiture électrique grâce à vos panneaux solaires. 2 ans de batterie virtuelle offerts. Installation en 1-2 jours. Estimation gratuite.",
   alternates: { canonical: "https://amelioration-habitat-conseil.fr/panneau-solaire-voiture-electrique" },
 };
 

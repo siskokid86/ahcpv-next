@@ -19,7 +19,7 @@ const TopBannerV2 = () => {
             <Gift className="h-4 w-4 text-primary-foreground" />
           </div>
           <span className="text-sm font-semibold text-primary-foreground">
-            Batterie ou borne de recharge offerte*
+            2 ans de batterie virtuelle offerts*
           </span>
           <span className="hidden text-sm text-primary-foreground/80 sm:inline">
             | Offre valable jusqu'au {promoEnd}

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { X, Battery, Zap, Gift } from "lucide-react";
+import { X, Battery, Gift } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 const STORAGE_KEY = "promo-popup-dismissed";
@@ -72,7 +72,7 @@ const PromoPopup = () => {
             <Gift className="h-7 w-7" />
           </div>
           <h2 className="text-2xl font-bold leading-tight">
-            Batterie ou borne de recharge offerte*
+            2 ans de batterie virtuelle offerts*
           </h2>
           <p className="mt-2 text-sm text-primary-foreground/80">
             Pour toute installation photovoltaïque
@@ -84,13 +84,7 @@ const PromoPopup = () => {
           <div className="flex items-start gap-3">
             <Battery className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
             <p className="text-sm text-foreground">
-              <span className="font-semibold">Batterie physique</span> — Stockez votre surplus d'énergie pour vos soirées et jours nuageux
-            </p>
-          </div>
-          <div className="flex items-start gap-3">
-            <Zap className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-            <p className="text-sm text-foreground">
-              <span className="font-semibold">Borne de recharge</span> — Rechargez votre véhicule électrique directement avec votre production solaire
+              <span className="font-semibold">Batterie virtuelle</span> — Stockez votre surplus virtuellement, restituez-le quand vous en avez besoin. 2 ans inclus.
             </p>
           </div>
 

@@ -35,7 +35,7 @@ const BatterieVirtuelle = () => {
             <CompactStats />
           </div>
           <TestimonialsV2 />
-          <CTAV2 ctaText="Estimer mes économies" microcopy="Batterie virtuelle incluse | Sans engagement" />
+          <CTAV2 ctaText="Estimer mes économies" microcopy="2 ans de batterie virtuelle offerts | Sans engagement" />
         </Suspense>
       </main>
       <FooterV2 />

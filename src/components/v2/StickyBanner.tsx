@@ -40,8 +40,8 @@ const StickyBanner = () => {
       <div className="container mx-auto flex items-center justify-between gap-3">
         <div className="flex flex-1 items-center justify-center gap-3 text-primary-foreground">
           <p className="text-sm font-semibold sm:text-base">
-            <span className="hidden sm:inline">Batterie ou borne de recharge offerte*</span>
-            <span className="sm:hidden">Batterie offerte*</span>
+            <span className="hidden sm:inline">2 ans de batterie virtuelle offerts*</span>
+            <span className="sm:hidden">Batterie virtuelle offerte*</span>
             <span className="mx-2 hidden text-primary-foreground/50 sm:inline">—</span>
             <span className="mx-1.5 text-primary-foreground/50 sm:hidden">—</span>
             <span className="text-xs font-medium text-primary-foreground/80 sm:text-sm">Offre limitée</span>

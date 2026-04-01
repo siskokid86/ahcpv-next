@@ -32,7 +32,7 @@ const PanneauSolaireVoitureElectrique = () => {
           </div>
           <TestimonialsV2 />
           <FAQEV />
-          <CTAV2 ctaText="Estimer mon projet solaire + borne" microcopy="Borne de recharge incluse | Sans engagement" />
+          <CTAV2 ctaText="Estimer mon projet solaire" microcopy="Batterie virtuelle incluse | Sans engagement" />
         </Suspense>
       </main>
       <FooterV2 />
